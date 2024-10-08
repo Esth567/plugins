@@ -1,0 +1,30 @@
+#football-leagues-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#football-leagues-sidebar li {
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#football-leagues-sidebar li:hover {
+    background-color: #ddd;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+.game-card h4 {
+    margin: 0 0 5px 0;
+}
+.game-card p {
+    margin: 0;
+}
+
