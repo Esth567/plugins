@@ -1,30 +1,66 @@
-#football-leagues-sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#football-leagues-sidebar li {
-    margin: 10px 0;
-    padding: 5px;
-    background-color: #f4f4f4;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-#football-leagues-sidebar li:hover {
-    background-color: #ddd;
-}
-
-.game-card {
-    border: 1px solid #ddd;
+/* Add these styles to your CSS file or within a <style> tag */
+#league-selection {
+    flex: 0 0 200px; /* Fixed width for the sidebar */
     padding: 10px;
-    margin-bottom: 10px;
+    border-right: 1px solid #ccc; /* Right border for the sidebar */
+}
+
+#main-content {
+    flex: 1; /* Fills the remaining space */
+    padding: 10px;
+}
+
+#match-filters {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
-.game-card h4 {
-    margin: 0 0 5px 0;
+
+#match-filters button {
+    border: none;
 }
-.game-card p {
-    margin: 0;
+
+#match-filters button:focus {
+    background-color: red;
+    border: none;
 }
+
+#match-filters button:hover {
+    background-color: red;
+    border: none;
+}
+
+#match-infoCont {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+#sidebar-container {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+#wg-api-baseball-games {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
 

@@ -2,8 +2,8 @@
 /*
 Plugin Name: All Sports
 Plugin URI: https://www.sportyfanz.com/
-Description: This is for sports for all matches
-Version: 1:1:0
+Description: This is for all sport games, giving the eexcitement you deserve 
+Version: 1:1:5
 Author: Esther Bassey
 Author URI: http://ma.tt/
 License: GPLv3 or later
@@ -36,9 +36,14 @@ if ( ! defined( 'ABSPATH' )) {
 class AllSports {
     function __construct() 
     {
-        include_once plugin_dir_path(__FILE__) . 'includes/all-football.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/football/all-football.php';
         include_once plugin_dir_path(__FILE__) . 'includes/standing.php';
-        include_once plugin_dir_path(__FILE__) . 'includes/game.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/footballStanding.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/football/footballMatch.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/all-basketball.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/all-basketballNews.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/volleyball/all-hockeymatches.php';
+        include_once plugin_dir_path(__FILE__) . 'includes/volleyball/hockey-standings.php';
 
         add_action('wp_enqueue_scripts', array($this, 'football_games_scripts'));
 
@@ -48,7 +53,7 @@ class AllSports {
   
         wp_enqueue_style('all-sport-styles', plugins_url('assets/api-football.css', __FILE__));
 
-       // wp_enqueue_script('football-api-js', plugin_dir_url(__FILE__) . 'assets/football-api.js', array('jquery'), '1.0', true);
+       //wp_enqueue_script('all-sport-js', plugin_dir_url(__FILE__) . 'assets/football-api.js', array('jquery'), '1.0', true);
     
      }
 
